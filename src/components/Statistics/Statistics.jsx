@@ -2,25 +2,25 @@ import "./statistics.css"
 
 const Statistics = () => {
   return(
-  <section class="statistics">
-  <h2 class="title">Upload stats</h2>
+  <section className="statistics">
+  <h2 className="title">Upload stats</h2>
 
-  <ul class="stat-list">
-    <li class="item">
-      <span class="label">.docx</span>
-      <span class="percentage">4%</span>
+  <ul className="stat-list">
+    <li className="item-stat">
+      <span className="label-stat">.docx</span>
+      <span className="percentage">4%</span>
     </li>
-    <li class="item">
-      <span class="label">.mp3</span>
-      <span class="percentage">14%</span>
+    <li className="item-stat">
+      <span className="label-stat">.mp3</span>
+      <span className="percentage">14%</span>
     </li>
-    <li class="item">
-      <span class="label">.pdf</span>
-      <span class="percentage">41%</span>
+    <li className="item-stat">
+      <span className="label-stat">.pdf</span>
+      <span className="percentage">41%</span>
     </li>
-    <li class="item">
-      <span class="label">.mp4</span>
-      <span class="percentage">12%</span>
+    <li className="item-stat">
+      <span className="label-stat">.mp4</span>
+      <span className="percentage">12%</span>
     </li>
   </ul>
       </section>

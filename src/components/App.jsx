@@ -10,7 +10,7 @@ export const App = () => {
     <>
       <Profile />
       <Statistics />
-      <Friendlist />
+      <ul className="friend-list"><Friendlist/> </ul>
       <TransactionHistory/>
 
       </>
