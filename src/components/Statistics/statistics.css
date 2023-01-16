@@ -41,17 +41,18 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
          
 }
-.item-stat:first-child{
+.item-stat:nth-child(n+1){
     background-color: lightskyblue;
 }
-.item-stat:last-child{
-    background-color:lightseagreen;
-}
-.item-stat:nth-child(2){
+
+.item-stat:nth-child(2n+1){
     background-color: blueviolet;
 }
-.item-stat:nth-child(3){
+.item-stat:nth-child(3n+1){
     background-color: palevioletred;
+}
+.item-stat:nth-child(4n+1) {
+    background-color: lightseagreen;
 }
 .label-stat{
     font-family: sans-serif;

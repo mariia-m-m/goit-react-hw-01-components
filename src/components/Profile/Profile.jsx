@@ -1,34 +1,40 @@
 import "./profile.css"
+import PropTypes from 'prop-types';
 
-const Profile = () => {
-  return(
+const Profile = ({ user }) => {
+  return (
     <div className="profile">
-  <div className="description">
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-      alt="User avatar"
-      className="avatar"
-    />
-    <p className="name">Petra Marica</p>
-    <p className="tag">@pmarica</p>
-    <p className="location">Salvador, Brasil</p>
-  </div>
+      <div className="description">
+        <img
+          src={user.avatar}
+          alt="User avatar"
+          className="avatar"
+        />
+        <p className="name">{user.username}</p>
+        <p className="tag">@{user.tag}</p>
+        <p className="location">{user.location}</p>
+      </div>
 
-  <ul className="stats">
-    <li className="item">
-      <span className="label">Followers</span>
-      <span className="quantity">1000</span>
-    </li>
-    <li className="item">
-      <span className="label">Views</span>
-      <span className="quantity">2000</span>
-    </li>
-    <li className="item">
-      <span className="label">Likes</span>
-      <span className="quantity">3000</span>
-    </li>
-  </ul>
-</div>)
-}
+      <ul className="stats">
+        <li className="item">
+          <span className="label">Followers</span>
+          <span className="quantity">{user.stats.followers}</span>
+        </li>
+        <li className="item">
+          <span className="label">Views</span>
+          <span className="quantity">{user.stats.views}</span>
+        </li>
+        <li className="item">
+          <span className="label">Likes</span>
+          <span className="quantity">{user.stats.likes}</span>
+        </li>
+      </ul>
+    </div>)
+};
+
+Profile.propTypes = {
+  user: PropTypes.object,
+  
+    }
 
 export default Profile;
