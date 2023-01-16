@@ -12,7 +12,7 @@
 
 }
 
-.stat-list{
+.statList{
     display:flex;
     flex-direction: row;
     margin: 0;
@@ -30,7 +30,7 @@
 
 }
 
-.item-stat{
+.item{
     margin:0;
     height: 60px;
     width:60px;
@@ -41,20 +41,20 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
          
 }
-.item-stat:nth-child(n+1){
+.item:nth-child(n+1){
     background-color: lightskyblue;
 }
 
-.item-stat:nth-child(2n+1){
+.item:nth-child(2n+1){
     background-color: blueviolet;
 }
-.item-stat:nth-child(3n+1){
+.item:nth-child(3n+1){
     background-color: palevioletred;
 }
-.item-stat:nth-child(4n+1) {
+.item:nth-child(4n+1) {
     background-color: lightseagreen;
 }
-.label-stat{
+.label{
     font-family: sans-serif;
         font-size: 12px;
         font-weight: 500;
