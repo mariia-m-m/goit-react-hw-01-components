@@ -11,8 +11,9 @@ const Statistics = ({ title, stats }) => {
     </li>)
 
   return(
-  <section className={style.statistics}>
-      <h2 className={style.title}>{title}</h2>
+    <section className={style.statistics}>
+      
+      {title && <h2 className={style.title}>{title}</h2>}
       <ul className={style.statList}>
       {elements}
        </ul>
